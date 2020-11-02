@@ -19,7 +19,7 @@
             <label for="description"> Quote Description</label>
 
             <input type="text" class="form-control" id="description" [(ngModel)]= 
-            "newQuote.name" name="name" #description='ngModel' required>
+            "newQuote.name" description="name" #description='ngModel' required>
             <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
                 <p>Quote Description is required</p>
             
@@ -29,10 +29,10 @@
 
         <div class="form-group">
   
-            <label for="description"> Author of Quote </label>
+            <label for="Author"> Author of Quote </label>
 
             <input type="text" class="form-control" id="name" [(ngModel)]= 
-            "newQuote.name" name="name" #name='ngModel' required>
+            "newQuote.name" name="name" #au='ngModel' required>
             <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
                 <p> Author of Quote is required</p>
             
