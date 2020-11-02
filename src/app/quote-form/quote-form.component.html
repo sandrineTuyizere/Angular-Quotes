@@ -32,7 +32,7 @@
             <label for="Author"> Author of Quote </label>
 
             <input type="text" class="form-control" id="name" [(ngModel)]= 
-            "newQuote.name" name="name" #au='ngModel' required>
+            "newQuote.name" author="name" #author='ngModel' required>
             <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
                 <p> Author of Quote is required</p>
             
@@ -41,9 +41,9 @@
         </div>
 
         <div class="form-group">
-            <label for="complete">published date</label>
+            <label for="published">published date</label>
             <input type="text" class="form-control" id="name" [(ngModel)]= 
-            "newQuote.name" name="name" #name='ngModel' required>
+            "newQuote.name" published="name" #published ='ngModel' required>
             <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
                 <p>published date  is required</p>
   
