@@ -42,7 +42,7 @@
 
         <div class="form-group">
             <label for="published">published date</label>
-            <input type="text" class="form-control" id="name" [(ngModel)]= 
+            <input type="text" class="form-control" id="published" [(ngModel)]= 
             "newQuote.name" published="name" #published='ngModel' required>
             <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
                 <p>published date  is required</p>
