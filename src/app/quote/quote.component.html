@@ -9,7 +9,7 @@
           <div *ngFor='let quote of quotes;let i = index'>
 
     
-            <h3 id={{i}} appStrikethrough>{{quote.name}} due on {{quote.completeDate|date|uppercase}} </h3>
+            <h3 id={{i}} appStrikethrough>{{quote.name}} published on {{quote.completeDate|date|uppercase}} </h3>
             <button (click)='toggleDetails(i)' class="btn btn-primary">Toggle Details</button>
         
   
